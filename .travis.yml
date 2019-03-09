@@ -1,11 +1,14 @@
-language: go # 声明构建语言环境
+language: c # 声明构建语言环境
+language: c++
+language: python
+language: java
 sudo: false # 开启基于容器的Travis CI任务，让编译效率更高。
 
-notifications: # 每次构建的时候是否通知，如果不想收到通知，那就设置false吧(email: false,也可以是Slack)
-  email:
+notifications: false # 每次构建的时候是否通知，如果不想收到通知，那就设置false吧(email: false,也可以是Slack)
+  email:	false
     recipients:
-      - xxx@xxx.com
-  slack: xxxx:xxxxxxxxxx
+      - speakshen@163.com
+#  slack: xxxx:xxxxxxxxxx
   on_success: change
   on_failure: always
 
@@ -30,4 +33,4 @@ after_success:
 
 env:#env环境变量设置，travis提供的repo_token安全方式
   global:
-    secure: "xxxx
+	  secure: "xxxx"

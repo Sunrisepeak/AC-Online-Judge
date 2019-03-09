@@ -1,5 +1,5 @@
 # AC-Online-Judge
-[![Build Status](https://img.shields.io/travis/markdown-it/markdown-it-emoji/master.svg?style=flat)](https://travis-ci.org/markdown-it/markdown-it-emoji)
+
 This is a repository of accepted code that collection almost whole problam's answer for Online Judge in internet. Of course, the is my ideal.
 
 ## OJ site links
