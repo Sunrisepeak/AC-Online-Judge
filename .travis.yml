@@ -1,36 +1,4 @@
-language: c # 声明构建语言环境
+language: c
 language: c++
-language: python
-language: java
-sudo: false # 开启基于容器的Travis CI任务，让编译效率更高。
-
-notifications: false # 每次构建的时候是否通知，如果不想收到通知，那就设置false吧(email: false,也可以是Slack)
-  email:	false
-    recipients:
-      - speakshen@163.com
-#  slack: xxxx:xxxxxxxxxx
-  on_success: change
-  on_failure: always
-
-go:
-  - 1.9.2
-
-install:#依赖安装
-  - go get github.com/go-playground/overalls #overalls能够支持到各级子目录
-  - go get github.com/mattn/goveralls #goveralls是coveralls对golang的测试覆盖率支持命令
-  - go get github.com/smartystreets/goconvey#很好用的测试工具
-  - mkdir -p $GOPATH/src/github.com/yangwenmai
-  - cd $GOPATH/src/github.com/yangwenmai/how-to-add-badge-in-github-readme
-
-script:# 集成脚本
-    - overalls -project=github.com/yangwenmai/how-to-add-badge-in-github-readme -covermode=count -ignore='.git,_vendor'
-    - goveralls -coverprofile=overalls.coverprofile -service=travis-ci -repotoken $COVERALLS_TOKEN
-    - go test -race -coverprofile=coverage.txt -covermode=atomic # 注意要添加这一行，否则不会出现 codecov bot
-    - go test ./...
-
-after_success:
-  - bash <(curl -s https://codecov.io/bash)
-
-env:#env环境变量设置，travis提供的repo_token安全方式
-  global:
-	  secure: "xxxx"
+rvm:
+	
