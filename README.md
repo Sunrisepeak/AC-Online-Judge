@@ -7,8 +7,8 @@ This is a repository of accepted code that collection almost whole problam's ans
 + [link PTA](https://pintia.cn/)
 	+ [link PAT(advance levle)](https://pintia.cn/problem-sets/994805342720868352/problems)
 	+ [link basic programme programe set](https://pintia.cn/problem-sets/14/problems)
-+[link LUOGUOJ](https://www.luogu.org/)
-+[link LeetCode](https://leetcode.com/)
++ [link LUOGUOJ](https://www.luogu.org/)
++ [link LeetCode](https://leetcode.com/)
 
 ## schedual
 ```c++
