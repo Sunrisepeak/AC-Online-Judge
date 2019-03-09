@@ -1,3 +1,10 @@
-language: c
-language: c++
+matrix:
+	fast_finish: true
+language: cpp
+sudo: required
+dist: trusty
+compiler:
+	- g++
+os:
+	- linux
 	
