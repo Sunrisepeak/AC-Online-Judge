@@ -1,10 +1,4 @@
-matrix:
-	fast_finish: true
 language: cpp
-sudo: required
-dist: trusty
-compiler:
-	- g++
-os:
-	- linux
+script: true
+
 	
