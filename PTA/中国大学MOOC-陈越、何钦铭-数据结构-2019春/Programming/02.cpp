@@ -40,7 +40,7 @@ int main()
         cout << " " << a[i][2] << " " << i;
   }
   else
-    cout << 0 << " " << 0;  //0¶àÏîÊ½
+    cout << 0 << " " << 0;  //0å¤šé¡¹å¼
   putchar('\n');
   //output sum
   int first = -1, lock = 1;
@@ -64,6 +64,6 @@ int main()
         cout << " " << a[i][3] << " " << i;
   }
   else 
-    cout << 0 << " " << 0;    //0 ¶àÏîÊ½
+    cout << 0 << " " << 0;    //0 å¤šé¡¹å¼
   return 0;
 }
