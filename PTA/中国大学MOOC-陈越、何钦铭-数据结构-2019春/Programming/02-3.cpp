@@ -2,7 +2,7 @@
 using namespace std;
 int sl_list[100000][2] = {0};
 int main()
-	{
+{
 	int head, n, k;
 	cin >> head >> n >> k;
 	int address = 0;
