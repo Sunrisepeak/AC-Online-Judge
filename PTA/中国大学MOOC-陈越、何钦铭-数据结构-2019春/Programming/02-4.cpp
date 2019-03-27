@@ -1,60 +1,36 @@
 #include<iostream>
+#include<stack>
+#include<vector>
 using namespace std;
-int sl_list[100000][2] = {0};
 int main()
 {
-	int head, n, k;
-	cin >> head >> n >> k;
-	int address = 0;
-	for(int i = 0; i < n; i++)
-	{ 
-		cin >> address;
-		if(address < 100000)
-			cin >> sl_list[address][0] >> sl_list[address][1];
-	}
-	int p = head;
-	int *save = new int[n+1];
-	int length = 0; 
-	for(int i = 1; p != -1; i++)
+	int m, n, k;
+	cin >> m >> n >> k;
+	vector<int> v(n+1);
+	for(int i = 0; i < k; i++)
 	{
-		length++;
-		save[length] = p;
-		p = sl_list[p][1];
-	}
-	int i, j;
-	for(i = k; i <= length; i += k)
-	{
-		for(j = i; j > 1 + i - k; j--)
-			printf("%05d %d %05d\n", save[j], sl_list[save[j]][0], save[j-1]);
-		//对每次逆转后的最后一个结点进行特殊判断(这个地方卡了我5,6个小时)
-		if(i <= length - k)
-			printf("%05d %d %05d\n", save[j], sl_list[ save[j] ][0], save[i + k]);		
-		else if(i < length)
-			printf("%05d %d %05d\n", save[j], sl_list[ save[j] ][0], save[i + 1]);
+		for(int j = 1; j <= n; j++)
+		{
+			cin >> v[j];
+		}
+		int flag = 1, t, r;
+		stack<int> s;
+		for(r = 1; r <= n; r++)
+		{
+			s.push(r);
+//			cout << "this is debug " << s.size() << endl;
+			if(s.size() > m)
+				break;
+			while(!s.empty() && v[flag] == s.top())
+			{
+				 s.pop();
+				 flag++;
+			}
+		}
+		if(r != flag)
+			cout << "NO" << endl;
 		else
-			printf("%05d %d %d\n", save[j], sl_list[ save[j] ][0], -1);
+			cout << "YES" << endl;
 	}
-	for(j = i -k + 1; j <= length; j++)
-	printf("%05d %d %d\n", save[j], sl_list[save[j]][0], sl_list[save[j]][1]);
-	delete [] save; 
 	return 0;
 }
-//测试案例
- 
-/*剩k-1不反转 
-00100 5 3 
-00000 4 99999
-00100 1 12309
-33218 3 00000
-99999 5 -1
-12309 2 33218
-
-//case 2  全反转 
-00100 6 3
-00000 4 99999
-00100 1 12309
-68237 6 -1
-33218 3 00000
-99999 5 68237
-12309 2 33218
-*/
