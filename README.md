@@ -1,5 +1,6 @@
 # AC-Online-Judge
 [![Build Status](https://travis-ci.com/Sunrisepeak/AC-Online-Judge.svg?branch=master)](https://travis-ci.com/Sunrisepeak/AC-Online-Judge)
+[![Coverage Status](https://coveralls.io/repos/github/Sunrisepeak/AC-Online-Judge/badge.svg?branch=master)](https://coveralls.io/github/Sunrisepeak/AC-Online-Judge?branch=master)
 
 This is a repository of accepted code that collection almost whole problam's answer for Online Judge in internet. Of course, this my ideal.
 
