@@ -1,7 +1,8 @@
 # AC-Online-Judge
 [![Build Status](https://travis-ci.com/Sunrisepeak/AC-Online-Judge.svg?branch=master)](https://travis-ci.com/Sunrisepeak/AC-Online-Judge)
+[![License Status](https://github.com/Sunrisepeak/AC-Online-Judge/blob/master/Z_projects-badges/apache-license-2.0.png)](https://github.com/Sunrisepeak/AC-Online-Judge/blob/master/LICENSE)
 [![Coverage Status](https://coveralls.io/repos/github/Sunrisepeak/AC-Online-Judge/badge.svg?branch=master)](https://coveralls.io/github/Sunrisepeak/AC-Online-Judge?branch=master)
-[![License badge](https://img.shields.io/badge/License-Apache%202.0-yellowgreen.svg)](https://github.com/Sunrisepeak/AC-Online-Judge/blob/master/LICENSE)
+[![Language Status](https://img.shields.io/badge/Language-C%2FC%2B%2B-orange.svg)](https://isocpp.org/)
 
 This is a repository of accepted code that collection almost whole problam's answer for Online Judge in internet. Of course, this my ideal.
 
