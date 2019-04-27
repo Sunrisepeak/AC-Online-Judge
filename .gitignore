@@ -1,0 +1,10 @@
+#output
+*.exe
+*.out
+
+#data file
+*.in
+*.out
+
+#obj
+*.obj
