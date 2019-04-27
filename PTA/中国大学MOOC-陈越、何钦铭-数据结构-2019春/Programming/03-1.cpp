@@ -22,7 +22,7 @@ int read_createST(STree t[])
 						t[i].lchild = -1; 
 						
 				if(r != '-')
-					t[i].rchild = r - '0';
+						t[i].rchild = r - '0';
 				else
 						t[i].rchild = -1; 
 		}
