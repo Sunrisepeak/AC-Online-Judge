@@ -10,7 +10,6 @@
 *.obj
 
 #script file
-quick*
 
 #other
 *.swap
