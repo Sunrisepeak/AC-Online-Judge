@@ -8,3 +8,7 @@
 
 #obj
 *.obj
+
+
+#other
+*.swap
