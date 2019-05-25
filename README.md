@@ -6,12 +6,13 @@
 
 This is a repository of accepted code that collection almost whole problam's answer for Online Judge in internet. Of course, this my ideal.
 
-##Document Format
+## Document Format
 
 /*`---------------------------------P A R T 1---------------------------------`
 ## __`c`^0^`d`~e~-`Begin`__
 ```cpp 
 */
+
 #include<iostream>
 int main()
 {
@@ -55,4 +56,5 @@ while(true)
 ```
 
 ## Note
-> :smile Ignore the worse English to the repository use,Please.Now I'm leraning and to hard improve it.
+:smile
+>Ignore the worse English to the repository use,Please.Now I'm leraning and to hard improve it.
