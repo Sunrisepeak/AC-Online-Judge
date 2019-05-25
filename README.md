@@ -8,6 +8,7 @@ This is a repository of accepted code that collection almost whole problam's ans
 
 ## Document(File) Example Of Framework
 /*`--------------------------------------P  A  R  T  1--------------------------------------`
+### `Accept Code`
 ```cpp */
 #include<iostream>
 int main()
@@ -28,7 +29,8 @@ int main()
 ##### `Space complexity`
 >+ contentArea
 ##### `Reference:`
-+ [AC-Online-Judge](https://github.com/Sunrisepeak/AC-Online-Judge)
+>+ [AC-Online-Judge](https://github.com/Sunrisepeak/AC-Online-Judge)
+
 */
 
 ## OJ site links

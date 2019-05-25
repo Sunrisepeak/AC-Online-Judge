@@ -1,4 +1,5 @@
 /*`--------------------------------------P  A  R  T  1--------------------------------------`
+### `Accept Code`
 ```cpp */
 #include<iostream>
 int main()
@@ -7,7 +8,7 @@ int main()
     return 0;
 }
 /*
-``` 
+```
 *//*`--------------------------------------P  A  R  T  2-------------------------------------`
 ### `A N A L Y Z E`
 ##### `Involved with knowledge and skill`
@@ -19,5 +20,6 @@ int main()
 ##### `Space complexity`
 >+ contentArea
 ##### `Reference:`
-+ [AC-Online-Judge](https://github.com/Sunrisepeak/AC-Online-Judge)
+>+ [AC-Online-Judge](https://github.com/Sunrisepeak/AC-Online-Judge)
+
 */
