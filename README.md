@@ -6,7 +6,7 @@
 
 This is a repository of accepted code that collection almost whole problam's answer for Online Judge in internet. Of course, this my ideal.
 
-## Document(File) Example Of Framework
+## Example Of File-Framework
 /*`--------------------------------------P  A  R  T  1--------------------------------------`
 ### `Accept Code`
 ```cpp */
