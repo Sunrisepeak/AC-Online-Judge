@@ -6,6 +6,36 @@
 
 This is a repository of accepted code that collection almost whole problam's answer for Online Judge in internet. Of course, this my ideal.
 
+##Document Format
+
+/*`---------------------------------P A R T 1---------------------------------`
+## __`c`^0^`d`~e~-`Begin`__
+```cpp 
+*/
+#include<iostream>
+int main()
+{
+	std::cout << "Code Area" << std::endl;
+    return 0;
+}
+/*
+```
+## __^c^`o`^d^`e`-`End`__ 
+*//*`---------------------------------P A R T 2---------------------------------`
+### `A N A L Y Z E`
+##### `Involved with knowledge and skill`
+>+ <font color=#008000>__^c^o^d^e-End__</font>
+##### `Problem-solving ideal`
+>+ <font color=#008000>this is content</font>
+##### `Time complexity`
+>+ <font color=#008000>this is content</font>
+##### `Space complexity`
+>+ <font color=#008000>this is content</font>
+##### `Reference:`
++ [AC-Online-Judge](https://github.com/Sunrisepeak/AC-Online-Judge)
+
+*/
+
 ## OJ site links
 + [USTCOJ](https://oj.ustc.edu.cn/#/)
 + [PTA](https://pintia.cn/)
@@ -16,10 +46,13 @@ This is a repository of accepted code that collection almost whole problam's ans
 + [LUOGUOJ](https://www.luogu.org/)
 + [LeetCode](https://leetcode.com/)
 
-## schedule
+## Schedule
 ```c++
 while(true)
 {
   workhard;
 }
 ```
+
+## Note
+> :smile Ignore the worse English to the repository use,Please.Now I'm leraning and to hard improve it.
