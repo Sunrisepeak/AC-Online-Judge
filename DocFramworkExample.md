@@ -1,5 +1,4 @@
-/*`---------------------------------P A R T 1---------------------------------`
-### <font color=#DC143C size=7 face="黑体">Code-Begin</font>
+/*`--------------------------------------P  A  R  T  1--------------------------------------`
 ```cpp */
 #include<iostream>
 int main()
@@ -8,19 +7,17 @@ int main()
     return 0;
 }
 /*
-```
-### <font color=#DC143C size=7 face="黑体">Code-End</font>
-*//*`---------------------------------P A R T 2---------------------------------`
+``` */
+/*`--------------------------------------P  A  R  T  2-------------------------------------`
 ### `A N A L Y Z E`
 ##### `Involved with knowledge and skill`
->+ <font color=#008000>__^c^o^d^e-End__</font>
+>+ contentArea
 ##### `Problem-solving ideal`
->+ <font color=#008000>this is content</font>
+>+ contentArea
 ##### `Time complexity`
->+ <font color=#008000>this is content</font>
+>+ contentArea
 ##### `Space complexity`
->+ <font color=#008000>this is content</font>
+>+ contentArea
 ##### `Reference:`
 + [AC-Online-Judge](https://github.com/Sunrisepeak/AC-Online-Judge)
-
 */

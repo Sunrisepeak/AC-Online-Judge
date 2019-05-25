@@ -7,7 +7,29 @@
 This is a repository of accepted code that collection almost whole problam's answer for Online Judge in internet. Of course, this my ideal.
 
 ## Document(File) Example Of Framework
-[File sytle](DocFramworkExample.md)
+/*`--------------------------------------P  A  R  T  1--------------------------------------`
+```cpp */
+#include<iostream>
+int main()
+{
+	std::cout << "Code Area" << std::endl;
+    return 0;
+}
+/*
+``` */
+/*`--------------------------------------P  A  R  T  2-------------------------------------`
+### `A N A L Y Z E`
+##### `Involved with knowledge and skill`
+>+ contentArea
+##### `Problem-solving ideal`
+>+ contentArea
+##### `Time complexity`
+>+ contentArea
+##### `Space complexity`
+>+ contentArea
+##### `Reference:`
++ [AC-Online-Judge](https://github.com/Sunrisepeak/AC-Online-Judge)
+*/
 
 ## OJ site links
 + [USTCOJ](https://oj.ustc.edu.cn/#/)
