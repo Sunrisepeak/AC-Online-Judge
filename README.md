@@ -31,7 +31,9 @@ int main()
 ##### `Reference:`
 >+ [AC-Online-Judge](https://github.com/Sunrisepeak/AC-Online-Judge)
 >+ [More Aanlyze](https://blog.csdn.net/sunrisePeak)
+
 */
+
 
 ## Instructions
 > Each folder is a question bank. it is in order easy view about accept code and its thinking that to insert some analyze content by `Markdown` in source file. Therefore, it would renamed for " `number.cpp.md` ", but this havan't influence part of code because of `Markdown` is annotation by " `/**/` ". So if you want to compiler it that only need remove " `.md` " in file end.
@@ -41,6 +43,7 @@ int main()
 >>  	  mv filename.cpp.md filename.cpp;
 >> 		  g++ -Wall -std=c++11 filename.cpp;
 >>		  ./a.out
+
 
 ## OJ site links
 + [USTCOJ](https://oj.ustc.edu.cn/#/)
@@ -52,6 +55,7 @@ int main()
 + [LUOGUOJ](https://www.luogu.org/)
 + [LeetCode](https://leetcode.com/)
 
+
 ## Schedule
 ```c++
 while(true)
@@ -59,6 +63,7 @@ while(true)
   workhard;
 }
 ```
+
 
 ## Note
 >:smile: Ignore the worse English to the repository use,Please.Now I'm leraning and to hard improve it.
