@@ -56,5 +56,4 @@ while(true)
 ```
 
 ## Note
-:smile
->Ignore the worse English to the repository use,Please.Now I'm leraning and to hard improve it.
+>:smile: Ignore the worse English to the repository use,Please.Now I'm leraning and to hard improve it.
