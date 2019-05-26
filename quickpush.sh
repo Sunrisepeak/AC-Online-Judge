@@ -4,6 +4,7 @@
 #
 #History:
 #	2019/4/30	---SPeak
+git pull origin master
 git add .
 git status
 git commit -m "quick commit and push to github by script"

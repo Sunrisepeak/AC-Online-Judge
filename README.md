@@ -8,29 +8,40 @@ This is a repository of accepted code that collection almost whole problam's ans
 
 ## Example Of File-Framework
 /*`--------------------------------------P  A  R  T  1--------------------------------------`
+
 ### `Accept Code`
+
 ```cpp */
 #include<iostream>
 int main()
 {
-    std::cout << "Code Area" << std::endl;
+	std::cout << "Code Area" << std::endl;
     return 0;
 }
 /*
 ```
+
 *//*`--------------------------------------P  A  R  T  2-------------------------------------`
+
+### `Test Run`
+##### `Sample input`
+> test Sample
+##### `Run Result`
+> ![RunResult](rResultImage/number_problem.png)
+
+`------------------------------------------P  A  R  T  3-------------------------------------`
+
 ### `A N A L Y Z E`
 ##### `Involved with knowledge and skill`
->+ contentArea
+> + contentArea
 ##### `Problem-solving ideal`
->+ contentArea
+> + contentArea
 ##### `Time complexity`
->+ contentArea
+> + contentArea
 ##### `Space complexity`
->+ contentArea
+> + contentArea
 ##### `Reference:`
->+ [AC-Online-Judge](https://github.com/Sunrisepeak/AC-Online-Judge)
->+ [More Aanlyze](https://blog.csdn.net/sunrisePeak)
+> + [AC-Online-Judge](https://github.com/Sunrisepeak/AC-Online-Judge)
 
 */
 
