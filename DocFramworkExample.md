@@ -1,5 +1,7 @@
 /*`--------------------------------------P  A  R  T  1--------------------------------------`
+
 ### `Accept Code`
+
 ```cpp */
 #include<iostream>
 int main()
@@ -9,17 +11,28 @@ int main()
 }
 /*
 ```
+
 *//*`--------------------------------------P  A  R  T  2-------------------------------------`
+
+### `Test Run`
+##### `Sample input`
+> test Sample
+##### `Run Result`
+> ![RunResult](rResultImage/number_problem.png)
+
+`------------------------------------------P  A  R  T  3-------------------------------------`
+
 ### `A N A L Y Z E`
 ##### `Involved with knowledge and skill`
->+ contentArea
+> + contentArea
 ##### `Problem-solving ideal`
->+ contentArea
+> + contentArea
 ##### `Time complexity`
->+ contentArea
+> + contentArea
 ##### `Space complexity`
->+ contentArea
+> + contentArea
 ##### `Reference:`
->+ [AC-Online-Judge](https://github.com/Sunrisepeak/AC-Online-Judge)
+> + [AC-Online-Judge](https://github.com/Sunrisepeak/AC-Online-Judge)
 
 */
+
