@@ -15,7 +15,7 @@ This is a repository of accepted code that collection almost whole problam's ans
 #include<iostream>
 int main()
 {
-	std::cout << "Code Area" << std::endl;
+    std::cout << "Code Area" << std::endl;
     return 0;
 }
 /*

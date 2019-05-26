@@ -6,7 +6,7 @@
 #include<iostream>
 int main()
 {
-	std::cout << "Code Area" << std::endl;
+    std::cout << "Code Area" << std::endl;
     return 0;
 }
 /*
