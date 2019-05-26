@@ -49,7 +49,7 @@ int main()
 ## Instructions
 > Each folder is a question bank. it is in order easy view about accept code and its thinking that to insert some analyze content by `Markdown` in source file. Therefore, it would renamed for " `number.cpp.md` ", but this havan't influence part of code because of `Markdown` is annotation by " `/**/` ". So if you want to compiler it that only need remove " `.md` " in file end.
 >+ You can try to try following way:
->    + Click a *.cpp.md file([Example](PTA/PAT(Basic-level)/1002.cpp.md)) to read content of code and analyze
+>    + Click a 	`*.cpp.md` file([Example](PTA/PAT(Basic-level)/1002.cpp.md)) to read content of code and analyze
 >    + Complier source file for Linux
 >>      `mv filename.cpp.md filename.cpp`
 >>      `g++ -Wall -std=c++11 filename.cpp`
