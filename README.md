@@ -55,7 +55,7 @@ int main()
 >>      `g++ -Wall -std=c++11 filename.cpp`
 >>      `./a.out`
 >    + How `run_test` a `*.cpp.md`
->>      ![RunResult](rResultImage/1002.png)
+>>   ![RunResult](rResultImage/1002.png)
 
 
 ## OJ site links
