@@ -8,7 +8,7 @@ typedef struct{
 
 Poly operator + (const Poly& A, const Poly& B){
 	Poly temp;
-//	temp.exp = A.exp + B.exp;
+//	temp.exp = A.exp + B.exp;	//ISSUE0: logical error: 20m
 	temp.exp = A.exp;
 	temp.coef = A.coef + B.coef;
 	return temp;
@@ -37,19 +37,24 @@ int main(){
 			c[ans_count++] = a[k0++][0];
 		}else if(a[k0][0].exp == a[k1][1].exp){
 			c[ans_count] = a[k0++][0] + a[k1++][1];
-			if(c[ans_count].coef != 0.)
+			if(c[ans_count].coef != 0.)	//ISSUE1: judge 0: 20m 
 				ans_count++;	
 		}else{
 			c[ans_count++] = a[k1++][1];
 		}
 	}
 	while(k0 < K[0]) c[ans_count++] = a[k0++][0];
-	while(k1 < K[1]) //c[ans_count++] = a[k1++][0];
+	while(k1 < K[1]) //c[ans_count++] = a[k1++][0];	//ISSUE2: index error, spend 20m
 		c[ans_count++] = a[k1++][1];
 	cout << ans_count;
 	for(int i = 0; i < ans_count; i++){
 	//	cout << " " << c[i].exp << " " << c[i].coef;
-        printf(" %d %.1f",c[i].exp, c[i].coef);
+        printf(" %d %.1f",c[i].exp, c[i].coef);		//ISSUE3: format: 1hour
 	} 
 	return 0;
 }
+
+/*
+Summary:
+	
+*/
