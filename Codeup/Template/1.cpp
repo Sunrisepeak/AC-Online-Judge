@@ -4,8 +4,8 @@
 
 int main(){
 	#ifdef Test
-		freopen("../Tdata/1928.td.in", "r", stdin);
-		freopen("../Tdata/1928.out", "w", stdout);
+		freopen("../Tdata/name.td.in", "r", stdin);		//name: problem id 
+		freopen("../Tdata/name.out", "w", stdout);
 	#endif
 	
 	
