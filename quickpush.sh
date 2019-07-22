@@ -4,10 +4,12 @@
 #
 #History:
 #	2019/4/30	---SPeak
+
+read cInfo
 git pull origin master
 git add .
 git status
-git commit -m "quick commit and push to github by script"
+git commit -m "$cInfo--quick commit and push to github by script"
 git push origin master
 echo -e "\n-----commit and push complete.-----\n"
 exit 0
