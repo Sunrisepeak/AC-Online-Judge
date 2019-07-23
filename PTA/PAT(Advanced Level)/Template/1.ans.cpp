@@ -5,7 +5,7 @@
 int main(){
 	#ifdef Test
 		freopen("../Tdata/name.td.in", "r", stdin);
-		freopen("../Tdata/name.out", "w", stdout);
+		freopen("../Tdata/name.ans.out", "w", stdout);
 	#endif
 	
 	
