@@ -51,7 +51,7 @@ int main(){
 	return 0;
 }	
 		
-/*
- *while(1); //test segmentation fault
+/* 
+ * while(1); //test segmentation fault
  *
  */
