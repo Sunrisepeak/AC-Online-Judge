@@ -18,7 +18,7 @@ bool swap_zero()
                 break;
             }
         }
-        if(nums[0] == 0)
+        if (nums[0] == 0)
             return false;
     }
     while (nums[0] != 0) {
@@ -32,8 +32,7 @@ int main()
 {
     int N, temp, zero_pos = -1;
     cin >> N;
-    for (int i = 0; i < N; i++)
-    {
+    for (int i = 0; i < N; i++) {
         cin >> temp;
         nums.push_back(temp);
     }
