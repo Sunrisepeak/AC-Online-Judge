@@ -1,0 +1,6 @@
+{
+    "code-runner.executorMap": {
+        "c": "cd $dir && g++ $fileName -o a.out && ./a.out",
+        "cpp": "cd $dir && g++ $fileName -o a.out && ./a.out"
+    },
+}
