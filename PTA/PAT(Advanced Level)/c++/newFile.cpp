@@ -1,33 +1,15 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <map>
 
 using namespace std;
 
-vector<int> tree(1010), nums;
-int N, count = 0;
-
-void createCBT(int root) {			// root = 1
-	if (root <= N && ::count < N) {
-		createCBT(2 * root);		// left tree
-		tree[root] = nums[::count++];
-		createCBT(2 * root + 1);	// right tree
-	}
-}
-
 int main() {
-	cin >> N;
-	for (int i = 0; i < N; i++) {
-		int temp;
-		cin >> temp;
-		nums.push_back(temp);
-	}
-	sort(nums.begin(), nums.end());
-	createCBT(1);
-	cout << tree[1];
-	for (int i = 2; i <= N; i++) {
-		cout << " " << tree[i];
-	}
+	map<int, vector<int>> test;
+	test[1].clear();
+	test[1].push_back(2);
+	cout << test[1][0] << endl;
 	return 0;
 }
 // array Tree
