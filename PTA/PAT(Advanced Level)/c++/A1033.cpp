@@ -1,61 +1,68 @@
 #include <iostream>
+#include <vector>
+#include <iomanip>  // setprecision
 
 using namespace std;
-struct GStation {
-    double price;
-    int next_station;
-}gs[30010];
+const double MAX_PRICE = 1 << 30u;
+vector<double> gStaPrice(30001, MAX_PRICE);
+
+int getLowPriceSta(int begin, int end, double currPri) {
+    int lpp = begin;
+    double lowPrice = gStaPrice[lpp];
+    for (int i = lpp + 1; i < end; i++) {
+	if (gStaPrice[i] <= currPri) {
+	    lpp = i;
+	    break;
+	}
+	if (gStaPrice[i] < lowPrice) {
+	    lowPrice = gStaPrice[i];
+	    lpp = i;
+    	}
+    }
+    return lpp;
+}
 
 int main() {
-    int CMax, D, Davg, N;
-    cin >> CMax >> D >> Davg >> N;
-    double p;
-    int temp_pos;
-    int _first = D, _last = -1;
-    for(int i = 0; i < N; i++) {
-        cin >> p >> temp_pos;
-        gs[temp_pos].price = p;
-        if(_first > temp_pos) {
-            _first = temp_pos;
-        }
-        if(_last < temp_pos) {
-            _last = temp_pos;
-        }
+    int C, D, Davg, N;
+    cin >> C >> D >> Davg >> N;
+    auto runMaxD = C * Davg;
+    for (int i = 0; i < N; i++) {
+	double p, d;
+	cin >> p >> d;
+	gStaPrice[d] = p;   // Or use p / Davg
     }
-
-    if(_first != 0) {
-        cout << "The maximum travel distance = " << "0.00";
-    } else {
-        int temp_next = D;
-        for(int i = _last; i >= _first; i--) {
-             if(gs[i].price > 0) {
-                 if(temp_next - i > Davg * CMax) {
-                    printf("The maximum travel distance = %.2lf", static_cast<double>(i) + Davg * CMax);
-                    return 0;
-                 }
-                 gs[i].next_station = temp_next;
-                 temp_next = i;
-             }
-        }
-        int present = _first, lowp_pos = gs[present].next_station;
-        double ans = 0;
-        while(1) {
-            bool FIND_LOWER = false;
-            for(int i = gs[present].next_station; i <= _last && i < present + CMax + Davg; i = gs[i].next_station) {
-                if(gs[i].price < gs[present].price) {
-                    ans += gs[present].price * (i - present);
-                    present = i;
-                    FIND_LOWER = true;
-                    break;
-                }
-                if(gs[lowp_pos].price > gs[i].price) {
-                    lowp_pos = i;
-                }
-            }
-            if(!FIND_LOWER) {
-               ans +=  
-            }
-        }
+    cout << fixed; cout.precision(2);	// set print format
+    double currentSta { 0 }, cheapestPrice { 0.0 }, currC { 0.0 };
+    while (true) {
+	double lPriSta;
+	if (currentSta + runMaxD >= D) {    // exit1
+	    lPriSta = getLowPriceSta(currentSta + 1, D, gStaPrice[currentSta]);
+	    cheapestPrice += (lPriSta - currentSta) / Davg * gStaPrice[currentSta] + (D - lPriSta) / Davg * gStaPrice[lPriSta];
+	    break;
+	} else {
+	    lPriSta = getLowPriceSta(currentSta + 1, currentSta + runMaxD + 1, gStaPrice[currentSta]);
+	    if (gStaPrice[lPriSta] == MAX_PRICE) {  // exit2
+		cout << "The maximum travel distance = " << currentSta + runMaxD << endl;
+		return 0;
+	    } else {
+		if (gStaPrice[lPriSta] > gStaPrice[currentSta]) {
+		    
+		} else {
+		    // Note: distance / Davg = used capcity
+		    cheapestPrice += (lPriSta - currentSta) / Davg * gStaPrice[currentSta];
+		}
+		currentSta = lPriSta;
+		cout << cheapestPrice << "-" << currentSta << endl;
+	    }
+	}
     }
+    cout << cheapestPrice << endl;
     return 0;
 }
+
+/**
+ *  Best Practice:
+ *	Price / Davg -> "newPrice_Standard"
+ *  Note: ***
+ *	not only find station of lower price but also first choice station of less than current price
+ * */
