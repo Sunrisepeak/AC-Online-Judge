@@ -17,7 +17,7 @@ public:
 
 /**
  *
- *  1.single stack
+ *  1.stack
  *  2.greedy
  *  3.double pointer
  *
