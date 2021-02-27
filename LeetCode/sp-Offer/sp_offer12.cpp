@@ -27,8 +27,8 @@ private:
 	//cout << string(index, '_') << x << " " << y << "  " << index << endl;
         // check border: hashValue Error from x + y to x * board[0].size() + y. spend 40min
         if (
-	    x >= board.size() || 
-	    y >= board[0].size() || 
+	    x >= board.size() || x < 0 ||
+	    y >= board[0].size() || y < 0 ||
 	    hashValue[x * board[0].size() + y]
 	) return false;
 	
